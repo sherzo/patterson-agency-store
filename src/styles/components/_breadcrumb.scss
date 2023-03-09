@@ -1,0 +1,28 @@
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  
+  &__item {
+    &:not(:last-child)::after {
+      margin-right: 10px;
+      margin-left: 10px;
+      content: "/";
+    }
+
+    &--active {
+      color: $disbledButtonColor;
+    }
+
+    @include respond(tab-port) {
+      &:not(:first-child) {
+        display: none;
+      }
+
+      &::after {
+        content: '' !important;
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  } 
+}

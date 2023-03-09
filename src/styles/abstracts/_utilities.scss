@@ -1,0 +1,50 @@
+.text-thin {
+  font-weight: 300;
+}
+
+.text-primary {
+  color: $black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  &:disabled {
+    background-color: $disbledButtonColor;
+    cursor: not-allowed;
+  }
+  
+  &--sm {
+    padding: 0.5rem 0.8rem;
+  }
+
+  &--default {
+    background-color: transparent;
+    padding: 0 0.5rem;
+  }
+
+  &--light {
+    background-color: $backgroundColor;
+    border-radius: 5px;
+  }
+
+  &--full-width {
+    width: 100%;
+  }
+}
+
+.input {
+  padding: 0.9rem 1rem;
+  border: 1px solid $backgroundColor;
+  outline: none;
+  text-transform: uppercase;
+}
